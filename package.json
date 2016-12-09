@@ -21,6 +21,7 @@
   "homepage": "https://github.com/fet584/fet584.github.io#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.2",
     "grunt-contrib-imagemin": "^1.0.1",
     "grunt-contrib-uglify": "^2.0.0"
   }

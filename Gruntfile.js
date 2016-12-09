@@ -1,21 +1,32 @@
 module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 
     grunt.initConfig({
         uglify:{
             my_target:{
                 files:{
-                    'dest/main.min.js':['views/js/main.js']
+                    'dest/main.min.js':['views/js/main.js'],
                 }
             }
         },
+
+        cssmin:{
+            target:{
+                files:{
+                    'views/css/bootstrap-grid.min.css':['views/css/bootstrap-grid.css'],
+                    'css/style.css':['css/style.min.css']
+                }
+            }
+        }
 
     });
 
 
     grunt.registerTask('default',[
         'uglify',
+        'cssmin'
         ]);
 };
