@@ -16,7 +16,7 @@ module.exports = function(grunt) {
         cssmin:{
             target:{
                 files:{
-                    // 'views/css/bootstrap-grid.min.css':['views/css/bootstrap-grid.css'],
+                    'views/css/bootstrap-grid.min.css':['views/css/bootstrap-grid.css'],
                     'css/style.min.css':['css/style.css']
                 }
             }

@@ -22,6 +22,6 @@
 
 2.Put the link of the font style to the bottom.
 
-3.Inline the styles.css
+3.Minify the style.css
 
 4.Add mediaquery(print)  to print.css
