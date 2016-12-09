@@ -28,9 +28,9 @@
 
 ### Main.js
 
-1.Stop the DFS.(line 504)
+1.Stop the DFS.(function changePizzaSizes & updatePositions)
 
-2.Make every pizza has its own layer.(line 537)
+2.Make every pizza has its own layer.(bottom lines)
 
 3.Minify.
 

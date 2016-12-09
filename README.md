@@ -1,6 +1,6 @@
 ## Website Performance Optimization portfolio project
 
-Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
+Try the best to optimize the critical rendering path and make this page render as quickly as possible.
 
 To get started, check out the repository and inspect the code.
 
@@ -11,20 +11,20 @@ To get started, check out the repository and inspect the code.
 Some useful tips to help you get started:
 
 1. Check out the repository
-1. To inspect the site on your phone, you can run a local server
+2. To inspect the site on your phone, you can run a local server
 
-  ```bash
+```bash
   $> cd /path/to/your-project-folder
   $> python -m SimpleHTTPServer 8080
-  ```
+```
 
 1. Open a browser and visit localhost:8080
-1. Download and install [ngrok](https://ngrok.com/) to the top-level of your project directory to make your local server accessible remotely.
+2. Download and install [ngrok](https://ngrok.com/) to the top-level of your project directory to make your local server accessible remotely.
 
-  ``` bash
+``` bash
   $> cd /path/to/your-project-folder
   $> ./ngrok http 8080
-  ```
+```
 
 1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights! Optional: [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
 
@@ -53,3 +53,17 @@ The portfolio was built on Twitter's <a href="http://getbootstrap.com/">Bootstra
 
 * <a href="http://getbootstrap.com/css/">Bootstrap's CSS Classes</a>
 * <a href="http://getbootstrap.com/components/">Bootstrap's Components</a>
+
+
+
+### Grunt
+
+The project used grunt. To know more about [grunt](gruntjs.com).
+
+Plug-ins:
+
+- [uglify](https://www.npmjs.com/package/grunt-contrib-uglify)
+- [cssmin](https://www.npmjs.com/package/grunt-contrib-cssmin)
+- [imagemin](https://www.npmjs.com/package/grunt-contrib-imagemin)
+
+node_modules has been ignored.
