@@ -6,7 +6,7 @@ To get started, check out the repository and inspect the code.
 
 ### Getting started
 
-####Part 1: Optimize PageSpeed Insights score for index.html
+####Part 1: Run the site
 
 Some useful tips to help you get started:
 
@@ -48,7 +48,31 @@ You might find the FPS Counter/HUD Display useful in Chrome developer tools desc
 * <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization.html">Optimize images</a>
 * <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching.html">HTTP caching</a>
 
+### Optimization Lists
+
+##### main.js
+
+- Use getElementById & getElementByClassName instead of querySelecteAll and move these lines out of loop.
+- Simplify the caculation in the loop by define and calculate variables out of loops.(function updatePositions)
+- Caculate number of sliding pizzas dynamoically according to the screen height and width rather than generate 200 pizzas rudely.
+
+##### style.css
+
+- Add `transform: translateZ(0);`and `backface-visibility:hidden` to the class `mover`. Enable hardware accelerated CSS.
+- [Autoprefier CSS](autoprefixer.github.io)
+
+##### pizza.html
+
+- Add `media` attribute of print.
+- Add `async` attribute to googleAnalytics.js and perfmatters.js.
+- Inline the style css as in this case css is not complicated.
+
+##### images
+
+- Minify.
+
 ### Customization with Bootstrap
+
 The portfolio was built on Twitter's <a href="http://getbootstrap.com/">Bootstrap</a> framework. All custom styles are in `dist/css/portfolio.css` in the portfolio repo.
 
 * <a href="http://getbootstrap.com/css/">Bootstrap's CSS Classes</a>

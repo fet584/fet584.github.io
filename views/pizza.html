@@ -139,53 +139,36 @@
   </div>
   <script type="text/javascript" src="js/main.min.js"></script>
   <style>
-    * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -box-sizing: border-box;
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-box-sizing: border-box;}
+
+body {font-family: "Trebuchet MS", Helvetica, sans-serif;background: black;}
+
+input {background: grey;font-size: 18px;
 }
 
-body {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  background: black;
+form {display: inline-block;
 }
 
-input {
-  background: grey;
-  font-size: 18px;
+.centered {text-align: center;
 }
 
-form {
-  display: inline-block;
+#pizzaSize {font-weight: 800;
 }
 
-.centered {
-  text-align: center;
+.mover {position: fixed;width: 256px;z-index: -1;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
-#pizzaSize {
-  font-weight: 800;
+.randomPizzaContainer {float: left;display: -webkit-box;display: -ms-flexbox;display: flex;
 }
 
-.mover {
-  position: fixed;
-  width: 256px;
-  z-index: -1;
+.randomPizzaContainer:after {content: "";display: table;clear:both;
 }
 
-.randomPizzaContainer {
-  float: left;
-  display: flex;
-}
-
-.randomPizzaContainer:after {
-  content: "";
-  display: table;
-  clear:both;
-}
-
- .container {
-  background-color: rgba(240, 60, 60, 0.8);
+ .container {background-color: rgba(240, 60, 60, 0.8);
 }
   </style>
 </body>
