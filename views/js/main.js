@@ -480,7 +480,7 @@ function updatePositions() {
   //There are only 5 different phases available.Define them before the loop and use inside the loop depending on i value
   var phases = [];
   for (var i = 0; i < 5; i++) {
-    phases.push(Math.sin(scrollTop)+i);
+    phases.push(Math.sin(scrollTop+i));
   }
 
   var phase;
@@ -506,7 +506,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var s = 256;
   var rows = screen.height / 250;
-  var cols = screen.width / 250;
+  var cols = 8;
   var pizzaNumber = Math.round(rows * cols);
   console.log(pizzaNumber);
   var movingPizzas1 = document.getElementById('movingPizzas1');
